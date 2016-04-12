@@ -32,7 +32,7 @@ if (isset($_GET['id'])) {
 	}
 }
 ?>
-
+<div class="card">
 <form method="post" action="save-marker.php">
 
 <div>
@@ -52,9 +52,10 @@ if (isset($_GET['id'])) {
     <input name="address" required value="<?php echo $address; ?>" />
 </div>
 <input type="hidden" name="id" value="<?php echo $id; ?>" />
-<input type="submit" value="Save" />
+<input type="submit" class="waves-effect waves-light btn green" value="Save" />
 
 </form>
+</div>
 
 <?php 
 //embed footer

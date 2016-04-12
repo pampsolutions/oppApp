@@ -23,11 +23,11 @@ foreach ($result as $row) {
         <td>' . $row['address'] . '</td>
         <td class="hide-on-med-and-down">' . $row['lat'] . '</td>
         <td class="hide-on-med-and-down">' . $row['lng'] . '</td>
-		<td class="hide-on-med-and-down"><a class="waves-effect waves-light btn green" href="marker.php?id=' . $row['id'] .'">Edit</a></td>
-		<td class="hide-on-med-and-down"><a class="waves-effect waves-light btn red" href="delete-marker.php?id=' . $row['id'] . '" 
+		<td class="hide-on-small-only"><a class="waves-effect waves-light btn green" href="marker.php?id=' . $row['id'] .'">Edit</a></td>
+		<td class="hide-on-small-only"><a class="waves-effect waves-light btn red" href="delete-marker.php?id=' . $row['id'] . '" 
 			onclick="return confirm(\'Are you sure you want to delete this marker?\');">Delete</a></td>
-       <td class="hide-on-large-only"><a class="waves-effect waves-light btn-floating green" href="marker.php?id=' . $row['id'] .'"><i class="material-icons">edit_mode</i></a></td>
-		<td class="hide-on-large-only"><a class="waves-effect waves-light btn-floating red" href="delete-marker.php?id=' . $row['id'] . '" 
+       <td class="hide-on-med-and-up"><a class="waves-effect waves-light btn-floating green" href="marker.php?id=' . $row['id'] .'"><i class="material-icons">edit_mode</i></a></td>
+		<td class="hide-on-med-and-up"><a class="waves-effect waves-light btn-floating red" href="delete-marker.php?id=' . $row['id'] . '" 
 			onclick="return confirm(\'Are you sure you want to delete this marker?\');"><i class="material-icons center-align">delete</i></a></td>     
 		</tr>';
 }
