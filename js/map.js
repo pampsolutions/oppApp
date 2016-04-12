@@ -13,7 +13,7 @@ $(document).ready(function() {
 				center: mapCenter, // map center
 				zoom: 15, //zoom level, 0 = earth view to higher value
 				maxZoom: 19,
-				minZoom: 13,
+				minZoom: 12,
 				zoomControlOptions: {
 				style: google.maps.ZoomControlStyle.SMALL //zoom control size
 			},
@@ -49,7 +49,7 @@ $(document).ready(function() {
 				'<label for="pName"><span>Name of the Assessor:</span><input type="text" name="pName" class="save-name" placeholder="Enter Title" maxlength="40" /></label>'+
                 '<label for="pDate"><span>Date :</span><input class="save-date" name="pDate" type="date" value="201-01-13"/></label>'+
                 '<label for="pCity"><span>City/ Town/ District:</span><input type="text" name="pCity" class="save-city" placeholder="Enter City" maxlength="40" /></label>'+
-				'<label for="pDesc"><span>Description :</span><textarea name="pDesc" class="save-desc" placeholder="Enter Address" maxlength="150"></textarea></label>'+
+				'<label for="pDesc"><span>Description :</span><textarea name="pDesc" class="save-desc" placeholder="Enter Comments" maxlength="150"></textarea></label>'+
 				'</form>'+
 				'</div></p><button name="save-marker" class="save-marker">Save Marker Details</button>';
 

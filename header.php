@@ -5,12 +5,12 @@
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-<link rel="stylesheet" href="css/styles.css" />
 <!--Import Google Icon Font-->
 <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!--Import materialize.css-->
 <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 <link type="text/css" rel="stylesheet" href="css/index.css" media="screen,projection" />
+<link rel="stylesheet" href="css/map.css" />
 <!--Let browser know website is optimized for mobile-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -28,8 +28,8 @@
                     <li class="search">
                         <input id="box" type="text" name="Search" placeholder="Search" class="center" />
                     </li>
-                    <li><a href="sass.html"><i class="material-icons" id="align">search</i></a></li>
-                    <li class="active"><a href="dashboard.php">DASHBOARD</a></li>
+                    <li><a href="#"><i class="material-icons" id="align">search</i></a></li>
+                    <li><a href="dashboard.php">DASHBOARD</a></li>
                     <li><a href="index.php">MAP</a></li>
                     <li><a href="userguide.html">USER GUIDE</a></li>
                     <li><a href="markers.php">COMMENT LOG</a></li>
@@ -37,7 +37,7 @@
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
                     <li><img src="logo.png" class="responsive-img" id="logo2" /></li>
-                    <li class="active"><a href="dashboard.php">DASHBOARD</a></li>
+                    <li><a href="dashboard.php">DASHBOARD</a></li>
                     <li><a href="index.php">MAP</a></li>
                     <li><a href="userguide.html">USER GUIDE</a></li>
                     <li><a href="markers.php">COMMENT LOG</a></li>

@@ -109,3 +109,22 @@ td a.btn {
     font-size:0.8rem;   
     position: relative; 
 }
+
+td a.btn-floating {
+    width: 29px;
+    height: 29px;
+    line-height: 29px;
+}
+
+.btn-floating i {
+  width: inherit;
+  display: inline-block;
+  text-align: left;
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 29px;
+}
+
+i {
+    margin-left: -5px;
+}

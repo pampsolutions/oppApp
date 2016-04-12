@@ -6,7 +6,7 @@ require_once('header.php');
 
 require_once('db.php');
 
-$sql = "SELECT * FROM markers";
+$sql = "SELECT * FROM markers ORDER BY id DESC";
 
 $result = $conn->query($sql);
 
