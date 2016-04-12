@@ -1,0 +1,111 @@
+#logo{
+    
+    height: 100px;
+    width: 100px;
+    margin-right: 30px;
+}
+
+i.material-icons{
+    
+    margin-left: 10px;
+    color: rgb(244,206,21); 
+}
+
+html{
+    
+background: rgb(244,206,21);  
+    
+}
+
+#logo2{
+    
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+    margin-right: 30px;
+    
+}
+
+#box{
+    height: 30px;
+    border-radius: 6px;
+    color: black;
+    background: white;
+    
+}
+.search{
+    
+ margin-left: 20px; 
+ font-weight: bold;
+
+    
+}
+
+table{
+    
+background: white;
+margin-top: 20px;
+border-radius: 10px;    
+    
+}
+
+#align{
+    
+    margin-left: -10px;
+    color: white;
+}
+
+#align:hover{
+    
+   color: rgb(244,206,21);
+}
+
+a:hover{
+    
+   color: rgb(244,206,21); 
+    
+}
+
+
+.size{
+    
+    width: 90px;
+    
+}
+
+@media only screen and (max-width: 993px) {
+   #logo{
+       
+       display: none;
+       
+   }
+   
+   a:hover{
+    
+   color: rgb(0,0,0); 
+   
+    
+    }
+    
+    table {
+        font-size: 0.85rem;  
+    }
+  
+   
+}
+
+.heading{
+    
+    background: black;
+    color: white;
+    
+}
+
+td {
+    word-wrap: break-word;
+}
+
+td a.btn {
+    font-size:0.8rem;   
+    position: relative; 
+}

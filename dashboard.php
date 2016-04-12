@@ -12,9 +12,9 @@ $result = $conn->query($sql);
 
 echo '
       <div class="row">
-      <div class="col s12">
+      <div class="col s12 l7">
         <table class="bordered highlight" style="table-layout: fixed; width: 100%">
-        <thead><tr class="heading"><th data-field="id">MARKER</th><th></th><th></th><th></th><th class="hide-on-med-and-down"></th><th class="hide-on-med-and-down"></th><th></th><th></th></tr>        <tr><th>Name</th><th>Date</th><th>City</th><th>Description</th><th class="hide-on-med-and-down">Lat</th><th class="hide-on-med-and-down">Lng</th><th>Edit</th><th>Delete</th></tr></thead><tbody>';
+        <thead><tr class="heading"><th data-field="id">RECENT MARKERS</th><th></th><th></th><th></th><th class="hide-on-med-and-down"></th><th class="hide-on-med-and-down"></th><th></th><th></th></tr>        <tr><th>Name</th><th>Date</th><th>City</th><th>Description</th><th class="hide-on-med-and-down">Lat</th><th class="hide-on-med-and-down">Lng</th><th>Edit</th><th>Delete</th></tr></thead><tbody>';
 
 foreach ($result as $row) {
 	echo '<tr><td>' . $row['name'] . '</td>
@@ -29,6 +29,24 @@ foreach ($result as $row) {
        <td class="hide-on-large-only"><a class="waves-effect waves-light btn-floating green" href="marker.php?id=' . $row['id'] .'"><i class="material-icons">edit_mode</i></a></td>
 		<td class="hide-on-large-only"><a class="waves-effect waves-light btn-floating red" href="delete-marker.php?id=' . $row['id'] . '" 
 			onclick="return confirm(\'Are you sure you want to delete this marker?\');"><i class="material-icons center-align">delete</i></a></td>     
+		</tr>';
+}
+
+echo '</tbody></table></div>';
+
+$sql = "SELECT * FROM IP";
+
+$result = $conn->query($sql);
+
+echo '
+      <div class="col s12 l5">
+        <table class="bordered">
+        <thead><tr class="heading"><th data-field="id">RECENT LOGINS</th><th></th></tr>
+        <tr><th>IP Address</th><th>Logout Time</th></tr></thead><tbody>';
+
+foreach ($result as $row) {
+	echo '<tr><td>' . $row['ip'] . '</td>
+		<td>' . $row['time'] . '</td>
 		</tr>';
 }
 

@@ -21,8 +21,8 @@ $(document).ready(function() {
 				mapTypeId: google.maps.MapTypeId.ROADMAP // google map type
 			};
 		
-		   	map = new google.maps.Map(document.getElementById("google_map"), googleMapOptions);
-               
+		   	map = new google.maps.Map(document.getElementById("google_map"), googleMapOptions); 
+                    
             if (navigator.geolocation) {
              navigator.geolocation.getCurrentPosition(function (position) {
              initialLocation = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
