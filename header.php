@@ -39,7 +39,7 @@
                     <li><img src="logo.png" class="responsive-img" id="logo2" /></li>
                     <li><a href="dashboard.php">DASHBOARD</a></li>
                     <li><a href="index.php">MAP</a></li>
-                    <li><a href="userguide.php">USER GUIDE</a></li>
+                    <li><a href="/userguide.php">USER GUIDE</a></li>
                     <li><a href="markers.php">COMMENT LOG</a></li>
                     <li><a href="logout.php">LOGOUT</a></li>
 
