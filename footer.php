@@ -9,7 +9,7 @@
                     <h5 class="white-text">Important Links</h5>
                     <ul>
                         <li><a class="grey-text text-lighten-3" href="#!">Copyright Information</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">User Guides</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://opp-app.herokuapp.com/userguide.php">User Guides</a></li>
 
                     </ul>
                 </div>
