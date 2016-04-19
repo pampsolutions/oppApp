@@ -1,130 +1,57 @@
-#logo{
-    
-    height: 100px;
-    width: 100px;
-    margin-right: 30px;
-}
+/*
+App Name: OPP App
+Theme URI: https://opp-app.herokuapp.com
+Description: Built for the OPP
+Author: PAMP Solutions
+Version: 1.0.0
+*/
 
-i.material-icons{
-    
-    margin-left: 10px;
-    color: rgb(244,206,21); 
-}
+/* GLOBAL */
+body {font-family: 'Verdana', sans-serif;}
+html {background:rgb(244,206,21);}
+a:hover {color:rgb(0,0,0)}
+.center {text-align: center; margin:0 auto;}
 
-html{
-    
-background: rgb(244,206,21);  
-    
-}
+#login .login-btn input, a {transition: all 0.3s ease;}
+#login .btn input, #login input {-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
 
-#logo2{
-    
-    height: 100px;
-    width: 100px;
-    margin-top: 10px;
-    margin-right: 30px;
-    
-}
+/* header */
+#logo {width:150px; margin: 10px 0 0 25px;}
+.search {margin-left:20px; font-weight:700;}
 
-#box{
-    height: 30px;
-    border-radius: 6px;
-    color: black;
-    background: white;
-    
-}
-.search{
-    
- margin-left: 20px; 
- font-weight: bold;
+/* footer */
 
-    
-}
+/* #login */
+#login {background: url('/img/login-bg.jpg') no-repeat; padding:12% 0;}
+#login .row {margin-bottom:0!important;}
+#login .form {width: 500px; margin: 10px auto;}
+#login .logo img {margin:0 auto; width:200px;}
+#login i {color:#dfc138; top: 13px; padding-left: 10px; font-size:40px;}
+#login .input-field input {background: rgba(0, 0, 0, 0.8)!important; margin-left:0!important; padding:10px 0 10px 65px; color:#dfc138; font-weight: 700; font-size: 20px;}
+#login .input-field label {font-size:1.3rem; top:1.2rem; left:2rem; text-transform: uppercase; font-weight: 700;}
+#login .input-field label.active {transform: translateY(-200%)!important;}
+#login .input-field .prefix ~ label.active {margin-left:0!important; text-transform: uppercase; font-size: 14px!important; color: rgba(255, 255, 255, 0.5)!important;font-weight: 700;}
+#login .btn {text-align:center; width:100%; background: none!important; box-shadow:none!important; height:100%!important;}
+#login .login-btn input {background: #dfc138!important; text-align:center; padding:20px 40px; border:5px solid rgba(0, 0, 0, 0.7); font-size: 20px; font-weight: 700; letter-spacing: 2px; color: #343434;}
+#login .login-btn input:hover {border:5px solid rgba(0, 0, 0, 1); background: #fff!important;}
+#login input[type=text]:focus:not([readonly]), #login input[type=password]:focus:not([readonly]), #login input[type=text].valid, #login input[type=password].valid {border-bottom:5px solid #dfc138!important; box-shadow:0 1px 0 0 #dfc138!important;}
+#login input[type=text]:focus:not([readonly])+label, #login input[type=password]:focus:not([readonly])+label {color: rgba(255, 255, 255, 0.5)!important;font-weight: 700;}
+/* Dashboard */
+table {background:white; margin-top:20px; border-radius:10px}
+td {word-wrap:break-word}
+td a.btn {font-size:0.8rem; position:relative}
+td a.btn-floating {width:29px; height:29px; line-height:29px}
 
-table{
-    
-background: white;
-margin-top: 20px;
-border-radius: 10px;    
-    
-}
+#box {height:30px; border-radius:6px; color:black; background:white}
+#align {margin-left:-10px; color:white}
+#align:hover {color:rgb(244,206,21)}
+.size {width:90px}
+.btn-floating i {width:inherit; display:inline-block; text-align:left; color:#fff; font-size:1.3rem; line-height:29px}
 
-#align{
-    
-    margin-left: -10px;
-    color: white;
-}
+/* Responsive */
+.mobile-logo {height:100px; width:100px; margin-top:10px; margin-right:30px}
 
-#align:hover{
-    
-   color: rgb(244,206,21);
-}
-
-a:hover{
-    
-   color: rgb(244,206,21); 
-    
-}
-
-
-.size{
-    
-    width: 90px;
-    
-}
-
-@media only screen and (max-width: 993px) {
-   #logo{
-       
-       display: none;
-       
-   }
-   
-   a:hover{
-    
-   color: rgb(0,0,0); 
-   
-    
-    }
-    
-    table {
-        font-size: 0.85rem;  
-    }
-  
-   
-}
-
-.heading{
-    
-    background: black;
-    color: white;
-    
-}
-
-td {
-    word-wrap: break-word;
-}
-
-td a.btn {
-    font-size:0.8rem;   
-    position: relative; 
-}
-
-td a.btn-floating {
-    width: 29px;
-    height: 29px;
-    line-height: 29px;
-}
-
-.btn-floating i {
-  width: inherit;
-  display: inline-block;
-  text-align: left;
-  color: #fff;
-  font-size: 1.3rem;
-  line-height: 29px;
-}
-
-i {
-    margin-left: -5px;
+@media only screen and (max-width:993px){
+  #logo {display:none}
+  table {font-size:0.85rem}
 }
