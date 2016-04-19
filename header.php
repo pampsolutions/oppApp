@@ -17,34 +17,30 @@
 </head>
 
 <body>
-<div class="navbar-fixed">
-        <nav>
-
-            <div class="nav-wrapper black">
-
-                <a href="#!" class="brand-logo right"><img class="responsive-img" id="logo" src="logo.png" /></a>
-                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                <ul class="hide-on-med-and-down">
-                    <li class="search">
-                        <input id="box" type="text" name="Search" placeholder="Search" class="center" />
-                    </li>
-                    <li><a href="#"><i class="material-icons" id="align">search</i></a></li>
-                    <li><a href="dashboard.php">DASHBOARD</a></li>
-                    <li><a href="index.php">MAP</a></li>
-                    <li><a href="userguide.html">USER GUIDE</a></li>
-                    <li><a href="markers.php">COMMENT LOG</a></li>
-                    <li><a href="logout.php">LOGOUT</a></li>
-                </ul>
-                <ul class="side-nav" id="mobile-demo">
-                    <li><img src="logo.png" class="responsive-img" id="logo2" /></li>
-                    <li><a href="dashboard.php">DASHBOARD</a></li>
-                    <li><a href="index.php">MAP</a></li>
-                    <li><a href="/userguide.php">USER GUIDE</a></li>
-                    <li><a href="markers.php">COMMENT LOG</a></li>
-                    <li><a href="logout.php">LOGOUT</a></li>
-
-
-                </ul>
-            </div>
-        </nav>
-    </div>
+  <header class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper black">
+            <a href="#!" class="brand-logo"><img class="responsive-img" id="logo" src="/img/logo.png" /></a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="hide-on-med-and-down right">
+                <!--<li class="search">
+                    <input id="box" type="text" name="Search" placeholder="Search" class="center" />
+                </li>
+                <li><a href="#"><i class="material-icons" id="align">search</i></a></li>-->
+                <li><a href="/dashboard.php">DASHBOARD</a></li>
+                <li><a href="/index.php" class="active">MAP</a></li>
+                <li><a href="/userguide.php">USER GUIDE</a></li>
+                <li><a href="/markers.php">COMMENT LOG</a></li>
+                <li><a href="/logout.php" class="waves-effect waves-light btn">LOGOUT</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li><img src="/img/logo.png" class="responsive-img" class="mobile-logo" /></li>
+                <li><a href="/dashboard.php">DASHBOARD</a></li>
+                <li><a href="/index.php">MAP</a></li>
+                <li><a href="/userguide.php">USER GUIDE</a></li>
+                <li><a href="/markers.php">COMMENT LOG</a></li>
+                <li><a href="/logout.php">LOGOUT</a></li>
+            </ul>
+        </div>
+    </nav>
+  </header>
