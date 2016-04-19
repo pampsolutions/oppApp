@@ -6,7 +6,7 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="js/validation.js"></script>
 <!--Import Google Icon Font-->
-<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!--Import materialize.css-->
 <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 <link type="text/css" rel="stylesheet" href="css/index.css" media="screen,projection" />
@@ -18,7 +18,7 @@
 <body id="login">
 
 	<div class="container">
-	  <div class="logo center"><img src="http://localhost:81/oppApp-master/img/logo.png" alt="OPP Logo" /></div>
+	  <div class="logo center"><img src="/img/logo.png" alt="OPP Logo" /></div>
 			<form class="form col s12" method="post" action="validate.php">
 			<div class="row">
 				<div class="input-field col s12">
