@@ -30,7 +30,7 @@ foreach ($result as $row) {
 		<td>' . $row['date'] . '</td>
 		<td>' . $row['city'] . '</td>
         <td>' . $row['address'] . '</td>
-        <td>' . $row['type'] . '</td>'
+        <td>' . $row['type'] . '</td></tr>';
         
 }
 
