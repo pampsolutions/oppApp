@@ -54,7 +54,11 @@ if (isset($_GET['id'])) {
 </div>
 <div>
     <label for="type">Type:</label>
-    <input name="type" required value="<?php echo $type; ?>" />
+    <select name="type" required value="<?php echo $type; ?>">
+        <option value="Green">Green</option>
+        <option value="Orange">Orange</option>
+        <option value="Red">Red</option>
+    </select>
 </div>
 <input type="hidden" name="id" value="<?php echo $id; ?>" />
 <input type="submit" class="waves-effect waves-light btn green" value="Save" />
