@@ -102,7 +102,7 @@ td a.btn-floating {width:29px; height:29px; line-height:29px}
 .markerIn::-webkit-input-placeholder {color:#989898;}
 .marker-edit label input, .marker-edit label select, .marker-edit label textarea {width: 90%; padding-left: 8px; border:0!important; border-radius: 3px; font-size:16px; background: #DDD; color: #000; font-weight: 700;}
 .marker-edit label textarea {width:93%!important; height: 5rem; color: #000; font-weight: 700; padding:10px;}
-.marker-edit label select {width:93%!important;}
+.marker-edit label select {width:93%!important; margin:0!important;}
 .gm-style .gm-style-iw {margin-left:15px;}
 .gm-style-iw div:first-of-type {overflow:hidden!important; width:250px!important;}
 h1.marker-heading {font-size: 25px; text-transform: uppercase; font-weight: 700; margin: 10px 0; font-style: italic;}
