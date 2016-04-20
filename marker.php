@@ -2,6 +2,16 @@
 
 require_once('header.php');
 
+?>
+
+<div id="editMarker">
+
+	<div class="row">
+	  <h1>Dashboard</h1>
+	</div>
+
+<?php
+
 if (isset($_GET['id'])) {
 	$id = $_GET['id'];
 	
@@ -33,7 +43,12 @@ if (isset($_GET['id'])) {
 	}
 }
 ?>
-<div class="card">
+<div class="container">
+
+<h2>Edit a Marker</h2>
+
+<div class="card edit-card">
+	
 <form method="post" action="save-marker.php">
 
 <div>
@@ -64,6 +79,10 @@ if (isset($_GET['id'])) {
 <input type="submit" class="waves-effect waves-light btn green" value="Save" />
 
 </form>
+</div>
+
+</div>
+
 </div>
 
 <?php 
