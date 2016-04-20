@@ -23,7 +23,8 @@ echo '
       <div class="row">
       <div class="col s12 l7">
         <table class="bordered highlight" style="table-layout: fixed; width: 100%">
-        <thead><tr class="heading"><th data-field="id">RECENT MARKERS</th><th></th><th></th><th><sub>10 most recent markers</sub></th><th></th><th></th></tr>        <tr><th>Name</th><th>Date</th><th>City</th><th>Description</th><th>Type</th></tr></thead><tbody>';
+        <thead><tr class="heading"><th data-field="id">RECENT MARKERS</th><th></th><th></th><th><sub>10 most recent markers</sub></th><th></th></tr>        
+        <tr><th>Name</th><th>Date</th><th>City</th><th>Description</th><th>Type</th></tr></thead><tbody>';
 
 foreach ($result as $row) {
 	echo '<tr><td>' . $row['name'] . '</td>
