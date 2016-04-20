@@ -1,10 +1,10 @@
 <?php ob_start();
 require_once('header.php');
 ?>
-
+<div id="dashboard">
   <div class="row">
     <div class="col s12">
-      <h1>Welcome to OPP Map User Guide</h1>
+      <h1>User Guide</h1>
       <ul class="collapsible" data-collapsible="accordion">
         <li>
           <div class="collapsible-header"><i class="material-icons">filter_drama</i>Introduction</div>
@@ -39,7 +39,7 @@ require_once('header.php');
       </ul>
     </div>
   </div>
-
+</div>
 <?php
 require_once('footer.php');
 ob_flush();
