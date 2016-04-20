@@ -31,7 +31,7 @@ footer.page-footer {margin-top:0!important; padding-top:0!important;}
 #login a {color:#FFF!important; text-shadow:1px 1px 1px #000;}
 #login i {color:#dfc138; top: 13px; padding-left: 10px; font-size:40px;}
 #login .row {margin-bottom:0!important;}
-#login .form {width: 100%; margin: 10px auto;}
+#login .form {width: 100%; max-width: 500px; margin: 10px auto;}
 #login .logo img {margin:0 auto; width:200px;}
 #login .input-field input {background: rgba(0, 0, 0, 0.8)!important; margin-left:0!important; padding:10px 0 10px 65px; color:#dfc138; font-weight: 700; font-size: 20px;}
 #login .input-field label {font-size:1.3rem; top:1.2rem; left:2rem; text-transform: uppercase; font-weight: 700;}
