@@ -70,9 +70,9 @@ if (isset($_GET['id'])) {
 <div>
     <label for="type">Type:</label>
     <select name="type" required value="<?php echo $type; ?>">
-        <option value="Green">Green</option>
-        <option value="Orange">Orange</option>
-        <option value="Red">Red</option>
+        <option class="green" value="Green">Green</option>
+        <option class="orange" value="Orange">Orange</option>
+        <option class="red" value="Red">Red</option>
     </select>
 </div>
 <input type="hidden" name="id" value="<?php echo $id; ?>" />
