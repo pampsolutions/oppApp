@@ -104,6 +104,8 @@ td a.btn-floating {width:29px; height:29px; line-height:29px}
 h1.marker-heading {font-size: 25px; text-transform: uppercase; font-weight: 700; margin: 10px 0; text-align:center;}
 .marker-edit input[type=text]:focus:not([readonly]), .marker-edit input[type=date]:focus:not([readonly]), .marker-edit input[type=textarea]:focus:not([readonly]) {border-bottom: 0!important; box-shadow:none!important; background-color: #dfc138;}
 
+.saved-marker {text-align:center;}
+
 button.save-marker, button.remove-marker {cursor: pointer; border:0; padding: 10px; color: #FFF; font-weight: 700;}
 button.save-marker:hover, button.remove-marker:hover {background-color:#000;}
 button.remove-marker {background-color:#ff3c00; margin-right: 8px;}
