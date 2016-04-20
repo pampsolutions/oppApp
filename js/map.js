@@ -106,12 +106,13 @@ $(document).ready(function() {
                 var mDate = contentString.find('input.save-date')[0].value; //date input field value
                 var mCity = contentString.find('input.save-city')[0].value; //City input field value
 				var mDesc  = contentString.find('textarea.save-desc')[0].value; //description input field value
+				var mType = contentString.find('select.save-type')[0].value; //type of marker
 
 				if(mName =='' || mDesc =='')
 				{
 					alert("The 'Title' and 'Details' fields are required.");
 				}else{
-					save_marker(marker, mName, mDate, mCity, mDesc, mReplace); //call save marker function
+					save_marker(marker, mName, mDate, mCity, mDesc, mType, mReplace); //call save marker function
 				}
 			});
 		}
@@ -159,11 +160,11 @@ $(document).ready(function() {
 	}
 
 	//############### Save Marker Function ##############
-	function save_marker(Marker, mName, mDate, mCity, mAddress, replaceWin)
+	function save_marker(Marker, mName, mDate, mCity, mAddress, mType, replaceWin)
 	{
 		//Save new marker using jQuery Ajax
 		var mLatLang = Marker.getPosition().toUrlValue(); //get marker position
-		var myData = {name : mName, date : mDate, city : mCity, address : mAddress, latlang : mLatLang }; //post variables
+		var myData = {name : mName, date : mDate, city : mCity, address : mAddress, type : mType, latlang : mLatLang }; //post variables
 		console.log(replaceWin);
 		$.ajax({
 		  type: "POST",
