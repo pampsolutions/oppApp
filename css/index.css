@@ -68,7 +68,8 @@ footer.page-footer {margin-top:0!important; padding-top:0!important;}
 #dashboard input:not([type]):focus:not([readonly]), #editMarker input:not([type]):focus:not([readonly]) {border-bottom: 1px solid #dfc138; box-shadow: 0 1px 0 0 #dfc138;}
 
 #userGuide .collapsible-header {font-size: 20px; padding:20px; text-align: center;}
-#userGuide .collapsible-body p {font-size: 16px; text-align: center;}
+#userGuide .collapsible-body {padding: 30px 0;}
+#userGuide .collapsible-body p {font-size: 16px; text-align: center; padding:10px 0!important;}
 #userGuide .collapsible-header i {display: inline!important; float: inherit!important; font-size: 35px!important; position: absolute; margin-left: -40px;}
 
 #editMarker form {text-align: center;}
