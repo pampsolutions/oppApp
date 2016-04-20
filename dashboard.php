@@ -20,7 +20,7 @@ $sql = "SELECT * FROM markers ORDER BY id DESC LIMIT 10";
 $result = $conn->query($sql);
 
 echo '
-      <div class="row">
+      <div class="row container">
       <div class="col s12 l8">
         <table class="card bordered highlight" style="table-layout: fixed; width: 100%">
         <h2>Recently Added Markers</h2>
