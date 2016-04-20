@@ -57,14 +57,22 @@ footer.page-footer {margin-top:0!important; padding-top:0!important;}
 #loginForgot a {font-size:16px;}
 
 /* Dashboard */
-#dashboard {padding:80px 20px;}
-#dashboard h1 {font-size:35px; font-weight:700; padding-left:20px; text-align: center; margin-bottom:0!important;}
-#dashboard h2 {font-size:25px; font-weight: 400; padding-left:10px;}
-#dashboard .btn {font-weight: 700;}
-#dashboard .btn:hover {background-color: #000!important;}
-#dashboard input:not([type]):focus:not([readonly]) {border-bottom: 1px solid #dfc138; box-shadow: 0 1px 0 0 #dfc138;}
-#dashboard .edit-card {width:80%; margin:0 auto;}
-#dashboard .edit-card .btn {width: 100%; padding: 10px; height:auto; font-size:20px;}
+#dashboard h1, #userGuide h1, #markerLog h1, #editMarker h1 {background-color: #CCC; margin-top:0; padding:40px 0; font-size:35px; font-weight:700; margin-bottom:0!important; border-bottom: 2px solid #FFF; text-align: center;}
+
+#dashboard, #userGuide, #markerLog, #editMarker {padding:0 0 40px;}
+#dashboard h2, #userGuide h2, #markerLog h2, #editMarker h2 {font-size:30px; font-weight: 400; padding:0 0 20px 10px; text-align: center}
+#dashboard .btn, #editMarker .btn {font-weight: 700;}
+#dashboard .btn:hover, #editMarker .btn:hover {background-color: #000!important;}
+#dashboard input:not([type]):focus:not([readonly]), #editMarker input:not([type]):focus:not([readonly]) {border-bottom: 1px solid #dfc138; box-shadow: 0 1px 0 0 #dfc138;}
+
+#userGuide .collapsible-header {font-size: 20px; padding:20px; text-align: center;}
+#userGuide .collapsible-body p {font-size: 16px; text-align: center;}
+#userGuide .collapsible-header i {display: inline!important; float: inherit!important; font-size: 35px!important; position: absolute; margin-left: -40px;}
+
+#editMarker form {text-align: center;}
+#editMarker .edit-card .btn {padding: 10px 40px; height:auto; font-size:20px;}
+#editMarker input:not([type]) {text-align: center; font-weight: 700;}
+#editMarker label {font-weight: 700; color: #9e9e9e; font-size: 18px;}
 
 table {background:white; margin-top:20px;}
 thead {background-color: #202020; color:#FFF;}
@@ -108,6 +116,7 @@ div.marker-inner-win{padding: 5px;}
 
 @media only screen and (max-width: 1920px) {
   #google_map {height: 845px;}
+  #dashboard .container, #markerLog .container {width:90%!important; max-width:inherit!important;}
 }
 
 @media only screen and (max-width:993px){
