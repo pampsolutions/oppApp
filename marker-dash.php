@@ -2,6 +2,16 @@
 
 require_once('header.php');
 
+?>
+
+<div id="editMarker">
+
+	<div class="row">
+	  <h1>Dashboard</h1>
+	</div>
+
+<?php
+
 if (isset($_GET['id'])) {
 	$id = $_GET['id'];
 
@@ -32,37 +42,39 @@ if (isset($_GET['id'])) {
 	}
 }
 ?>
-<div id="dashboard">
 
-<div class="row">
-  <h1>Edit a Marker</h1>
-</div>
+<div class="container">
+
+<h2>Edit a Marker</h2>
 
 <div class="card edit-card">
 <form method="post" action="save-marker-dash.php">
 
-<div>
-    <label for="name">Descriptive Title:</label>
-    <input name="name" required value="<?php echo $name; ?>" />
-</div>
-<div>
-    <label for="date">Date:</label>
-    <input name="date" required value="<?php echo $date; ?>" />
-</div>
-<div>
-    <label for="city">Main Intersection:</label>
-    <input name="city" required value="<?php echo $city; ?>" />
-</div>
-<div>
-    <label for="address">Details:</label>
-    <input name="address" required value="<?php echo $address; ?>" />
-</div>
-<input type="hidden" name="id" value="<?php echo $id; ?>" />
-<input type="submit" class="waves-effect waves-light btn" value="Save" />
+	<div>
+	    <label for="name">Descriptive Title:</label>
+	    <input name="name" required value="<?php echo $name; ?>" />
+	</div>
+	<div>
+	    <label for="date">Date:</label>
+	    <input name="date" required value="<?php echo $date; ?>" />
+	</div>
+	<div>
+	    <label for="city">Main Intersection:</label>
+	    <input name="city" required value="<?php echo $city; ?>" />
+	</div>
+	<div>
+	    <label for="address">Details:</label>
+	    <input name="address" required value="<?php echo $address; ?>" />
+	</div>
+	<input type="hidden" name="id" value="<?php echo $id; ?>" />
+	<input type="submit" class="waves-effect waves-light btn" value="Save" />
 
 </form>
 </div>
-</div>
+
+</div><!-- .container -->
+
+</div><!-- #dashboard -->
 
 <?php
 //embed footer
