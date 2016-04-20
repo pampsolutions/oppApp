@@ -7,22 +7,27 @@ Version: 1.0.0
 */
 
 /* GLOBAL */
-body {font-family: 'Verdana', sans-serif;}
-html {background:rgb(244,206,21);}
+body {font-family: 'Open Sans', sans-serif;}
+html {background:#DDD;}
 .center {text-align: center; margin:0 auto;}
-
-#login .login-btn input, a {transition: all 0.3s ease;}
-#login .btn input, #login input, .login-error {-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+#login .login-btn input, a, button.save-marker, button.remove-marker, .btn, nav ul a {transition: all 0.3s ease;}
+#login .btn input, #login input, .login-error, button.save-marker, button.remove-marker, table, thead {-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
 
 /* header */
 header a:hover {color:rgb(0,0,0)}
 #logo {width:150px; margin: 10px 0 0 25px;}
 .search {margin-left:20px; font-weight:700;}
+nav ul a {font-weight:700; color:#dfc138; font-size: 16px;}
+nav ul a:hover {color:#FFF;}
+nav .btn {background-color: #dfc138!important; color:#000;}
+nav .btn:hover {background-color: #fff!important; color:#000;}
 
 /* footer */
+footer.page-footer {margin-top:0!important; padding-top:0!important;}
+.footer-copyright {text-align: center;}
 
 /* #login */
-#login {background: url('/img/login-bg.jpg') no-repeat; padding:10% 0; background-position: 50% 70%;}
+#login {background: url('http://localhost:81/oppApp-master/img/login-bg.jpg') no-repeat; padding:10% 0; background-position: 50% 70%;}
 #login a {color:#FFF!important; text-shadow:1px 1px 1px #000;}
 #login i {color:#dfc138; top: 13px; padding-left: 10px; font-size:40px;}
 #login .row {margin-bottom:0!important;}
@@ -52,8 +57,19 @@ header a:hover {color:rgb(0,0,0)}
 #loginForgot a {font-size:16px;}
 
 /* Dashboard */
-table {background:white; margin-top:20px; border-radius:10px}
-td {word-wrap:break-word}
+#dashboard {padding:80px 20px;}
+#dashboard h1 {font-size:35px; font-weight:700; padding-left:20px; text-align: center; margin-bottom:0!important;}
+#dashboard h2 {font-size:25px; font-weight: 400; padding-left:10px;}
+#dashboard .btn {font-weight: 700;}
+#dashboard .btn:hover {background-color: #000!important;}
+#dashboard input:not([type]):focus:not([readonly]) {border-bottom: 1px solid #dfc138; box-shadow: 0 1px 0 0 #dfc138;}
+#dashboard .edit-card {width:80%; margin:0 auto;}
+#dashboard .edit-card .btn {width: 100%; padding: 10px; height:auto; font-size:20px;}
+
+table {background:white; margin-top:20px;}
+thead {background-color: #202020; color:#FFF;}
+th {padding:10px;border-radius: 0!important; text-align: center;}
+td {word-wrap:break-word; text-align: center;}
 td a.btn {font-size:0.8rem; position:relative}
 td a.btn-floating {width:29px; height:29px; line-height:29px}
 
@@ -62,11 +78,43 @@ td a.btn-floating {width:29px; height:29px; line-height:29px}
 #align:hover {color:rgb(244,206,21)}
 .size {width:90px}
 .btn-floating i {width:inherit; display:inline-block; text-align:left; color:#fff; font-size:1.3rem; line-height:29px}
+.card {padding: 20px;}
+
+/* #map */
+#google_map {width: 100%; height: 845px;margin-top:0px;margin-left:auto;margin-right:auto;}
+
+.marker-edit select {display:block; width:40%;}
+.markerIn::-webkit-input-placeholder {color:#989898;}
+.marker-edit label input, .marker-edit label select, .marker-edit label textarea {width: 90%; padding-left: 8px; border:0!important; border-radius: 3px; font-size:16px; background: #DDD; color: #000; font-weight: 700;}
+.marker-edit label textarea {width:93%!important; height: 5rem; color: #000; font-weight: 700; padding:10px;}
+.gm-style .gm-style-iw {margin-left:15px;}
+.gm-style-iw div:first-of-type {overflow:hidden!important; width:250px!important;}
+h1.marker-heading {font-size: 25px; text-transform: uppercase; font-weight: 700; margin: 10px 0; font-style: italic;}
+.marker-edit input[type=text]:focus:not([readonly]), .marker-edit input[type=date]:focus:not([readonly]), .marker-edit input[type=textarea]:focus:not([readonly]) {border-bottom: 0!important; box-shadow:none!important; background-color: #dfc138;}
+
+button.save-marker, button.remove-marker {cursor: pointer; border:0; padding: 10px; color: #FFF; font-weight: 700;}
+button.save-marker:hover, button.remove-marker:hover {background-color:#000;}
+button.remove-marker {background-color:#ff3c00; margin-right: 8px;}
+button.save-marker {float:left; background-color:#589c2a; margin-right:10px;}
+
+.marker-edit label{display:block;margin-bottom: 5px;}
+div.marker-info-win {margin-right: -20px;}
+div.marker-info-win p{padding: 0px;margin: 10px 0px 10px 0;}
+div.marker-inner-win{padding: 5px;}
+
 
 /* Responsive */
 .mobile-logo {height:100px; width:100px; margin-top:10px; margin-right:30px}
 
+@media only screen and (max-width: 1920px) {
+  #google_map {height: 845px;}
+}
+
 @media only screen and (max-width:993px){
   #logo {display:none}
   table {font-size:0.85rem}
+}
+
+@media only screen and (max-width: 993px) {
+#google_map {width: 95%; height: 600px;margin-top:0px;margin-left:auto;margin-right:auto;}
 }
