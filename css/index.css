@@ -14,6 +14,10 @@ html {background:#DDD;}
 #login .btn input, #login input, .login-error, button.save-marker, button.remove-marker, table, thead {-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
 select {display: inherit!important; width: 100px; margin: 20px auto;}
 
+.red {background-color:#ca2020;}
+.orange {background-color:#ea7e35;}
+.green {background-color:#2da761;}
+
 /* header */
 header a:hover {color:rgb(0,0,0)}
 #logo {width:150px; margin: 10px 0 0 25px;}
@@ -98,6 +102,7 @@ td a.btn-floating {width:29px; height:29px; line-height:29px}
 .markerIn::-webkit-input-placeholder {color:#989898;}
 .marker-edit label input, .marker-edit label select, .marker-edit label textarea {width: 90%; padding-left: 8px; border:0!important; border-radius: 3px; font-size:16px; background: #DDD; color: #000; font-weight: 700;}
 .marker-edit label textarea {width:93%!important; height: 5rem; color: #000; font-weight: 700; padding:10px;}
+.marker-edit label select {width:93%!important;}
 .gm-style .gm-style-iw {margin-left:15px;}
 .gm-style-iw div:first-of-type {overflow:hidden!important; width:250px!important;}
 h1.marker-heading {font-size: 25px; text-transform: uppercase; font-weight: 700; margin: 10px 0; font-style: italic;}
@@ -106,7 +111,7 @@ h1.marker-heading {font-size: 25px; text-transform: uppercase; font-weight: 700;
 button.save-marker, button.remove-marker {cursor: pointer; border:0; padding: 10px; color: #FFF; font-weight: 700;}
 button.save-marker:hover, button.remove-marker:hover {background-color:#000;}
 button.remove-marker {background-color:#ff3c00; margin-right: 8px;}
-button.save-marker {float:left; background-color:#589c2a; margin-right:10px;}
+button.save-marker {float:left; background-color:#0089EC; margin:0 10px 0 5px;}
 
 .marker-edit label{display:block;margin-bottom: 5px;}
 div.marker-info-win {margin-right: -20px;}
