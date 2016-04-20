@@ -31,7 +31,7 @@
                 <li><a href="/logout.php" class="waves-effect waves-light btn">LOGOUT</a></li>
             </ul>
             <ul class="side-nav" id="mobile-demo">
-                <li><img src="http://localhost:81/oppApp-master/img/logo.png" class="responsive-img" class="mobile-logo" /></li>
+                <li><img src="/img/logo.png" class="responsive-img" class="mobile-logo" /></li>
                 <li><a href="/dashboard.php">DASHBOARD</a></li>
                 <li><a href="/index.php">MAP</a></li>
                 <li><a href="/userguide.php">USER GUIDE</a></li>
