@@ -21,8 +21,8 @@ $result = $conn->query($sql);
 
 echo '
       <div class="row">
-      <div class="col s12 l7">
-        <table class="bordered highlight" style="table-layout: fixed; width: 100%">
+      <div class="col s12 l8">
+        <table class="card bordered highlight" style="table-layout: fixed; width: 100%">
         <h2>Recently Added Markers</h2>
         <thead><tr><th>Name</th><th>Date</th><th>City</th><th>Description</th><th>Type</th></tr></thead><tbody>';
 
