@@ -14,6 +14,7 @@ html {background:#DDD;}
 #login .btn input, #login input, .login-error, button.save-marker, button.remove-marker, table, thead {-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
 select {display: inherit!important; width: 100px; margin: 20px auto;}
 option:hover {background-color:transparent;}
+select{-webkit-appearance: none;-moz-appearance: none;appearance: none;padding: 5px;}
 
 .red {background-color:#ca2020;}
 .orange {background-color:#ea7e35;}
