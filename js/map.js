@@ -45,18 +45,13 @@ $(document).ready(function() {
 			google.maps.event.addListener(map, 'click', function(event) {
 				//Edit form to be displayed with new marker
 				var EditForm = '<p><div class="marker-edit">'+
-				'<div class="row">'+
 				'<form action="ajax-save.php" method="POST" name="SaveMarker" id="SaveMarker">'+
-				'<label for="pName"><span>Name of the Assessor:</span><input type="text" name="pName" class="save-name" placeholder="Enter Title" maxlength="40" /></label>'+
-				'<br>'+
-                '<label for="pDate"><span>Date :</span><input class="save-date" name="pDate" type="date" value="201-01-13"/></label>'+
-				'<br>'+
-                '<label for="pCity"><span>City/ Town/ District:</span><input type="text" name="pCity" class="save-city" placeholder="Enter City" maxlength="40" /></label>'+
-				'<br>'+
-				'<label for="pDesc"><span>Description :</span><textarea name="pDesc" class="save-desc" placeholder="Enter Comments" maxlength="150"></textarea></label>'+
+				'<label for="pName"><input type="text" name="pName" class="save-name markerIn" placeholder="Descriptive Title" maxlength="40" /></label>'+
+        '<label for="pDate"><input class="save-date markerIn" name="pDate" type="date" value="201-01-13"/></label>'+
+        '<label for="pCity"><input type="text" name="pCity" class="save-city markerIn" placeholder="Main Intersection" maxlength="40" /></label>'+
+				'<label for="pDesc"><textarea type="textarea" name="pDesc" class="save-desc markerIn" placeholder="More Details" maxlength="150"></textarea></label>'+
 				'</form>'+
-				'</div></p><button name="save-marker" class="save-marker">Save Marker Details</button>'+
-				'</div>';
+				'</div></p><button name="save-marker" class="save-marker">Save Marker</button>';
 
 				//Drop a new Marker with our Edit Form
 				create_marker(event.latLng, 'New Marker', EditForm, true, true, true, "icons/pin_green.png");
@@ -113,7 +108,7 @@ $(document).ready(function() {
 
 				if(mName =='' || mDesc =='')
 				{
-					alert("Please enter Name and Description!");
+					alert("The 'Title' and 'Details' fields are required.");
 				}else{
 					save_marker(marker, mName, mDate, mCity, mDesc, mReplace); //call save marker function
 				}
