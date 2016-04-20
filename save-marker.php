@@ -20,6 +20,7 @@ $name = $_POST['name'];
 $date = $_POST['date'];
 $city = $_POST['city'];
 $address = $_POST['address'];
+$type = $_POST['type'];
 $id = $_POST['id'];
 
 try {
@@ -27,10 +28,10 @@ try {
 	require_once('db.php');
 	
 	if (empty($id)) { 
-		$sql = "INSERT INTO markers (name, date, city, address) VALUES (:name, :date, :city, :address)";	
+		$sql = "INSERT INTO markers (name, date, city, address, type) VALUES (:name, :date, :city, :address, :type)";	
 	}
 	else { 
-		$sql = "UPDATE markers SET name = :name, date = :date, city = :city, address = :address	WHERE id = :id";
+		$sql = "UPDATE markers SET name = :name, date = :date, city = :city, address = :address, type = :type WHERE id = :id";
 		
 	}
 	
@@ -39,6 +40,7 @@ try {
 	$cmd->bindParam(':date', $date, PDO::PARAM_STR, 50);
 	$cmd->bindParam(':city', $city, PDO::PARAM_STR, 50);
     $cmd->bindParam(':address', $address, PDO::PARAM_STR, 50);
+    $cmd->bindParam(':type', $type, PDO::PARAM_STR, 50);
 	
 	if (!empty($id)) {
 		$cmd->bindParam(':id', $id, PDO::PARAM_INT);
