@@ -24,15 +24,14 @@ echo '
       <div class="col s12">
         <table class="bordered highlight" style="table-layout: fixed; width: 100%">
         <h2>Marker Log</h2>
-        <thead><tr><th>Name</th><th>Date</th><th>City</th><th>Description</th><th class="hide-on-med-and-down">Lat</th><th class="hide-on-med-and-down">Lng</th><th>Edit</th><th>Delete</th></tr></thead><tbody>';
+        <thead><tr><th>Name</th><th>Date</th><th>City</th><th>Description</th><th>Type</th><th>Edit</th><th>Delete</th></tr></thead><tbody>';
 
 foreach ($result as $row) {
 	echo '<tr><td>' . $row['name'] . '</td>
 		<td>' . $row['date'] . '</td>
 		<td>' . $row['city'] . '</td>
         <td>' . $row['address'] . '</td>
-        <td class="hide-on-med-and-down">' . $row['lat'] . '</td>
-        <td class="hide-on-med-and-down">' . $row['lng'] . '</td>
+        <td>' . $row['type'] . '</td>
 		<td class="hide-on-small-only"><a class="waves-effect waves-light btn green" href="marker.php?id=' . $row['id'] .'">Edit</a></td>
 		<td class="hide-on-small-only"><a class="waves-effect waves-light btn red" href="delete-marker.php?id=' . $row['id'] . '"
 			onclick="return confirm(\'Are you sure you want to delete this marker?\');">Delete</a></td>
