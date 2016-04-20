@@ -9,7 +9,7 @@ require_once('header.php');
 <div id="dashboard">
 
 <div class="row">
-  <h1 style="text-align:left;">Dashboard</h1>
+  <h1>Dashboard</h1>
 </div>
 
 <?php
@@ -20,7 +20,7 @@ $sql = "SELECT * FROM markers ORDER BY id DESC LIMIT 10";
 $result = $conn->query($sql);
 
 echo '
-      <div class="row">
+      <div class="row container">
       <div class="col s12 l8">
         <table class="bordered highlight card" style="table-layout: fixed; width: 100%">
         <h2>Recently Added Markers</h2>
