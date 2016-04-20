@@ -75,7 +75,7 @@ $(document).ready(function() {
 		});
 
 		//Content structure of info Window for the Markers
-		var contentString = $('<div class="marker-info-win">'+
+		var contentString = $('<div class="marker-info-win saved-marker">'+
 		'<div class="marker-inner-win"><span class="info-content">'+
 		'<h1 class="marker-heading">'+MapTitle+'</h1>'+
 		MapDesc+
