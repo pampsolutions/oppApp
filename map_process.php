@@ -46,8 +46,9 @@ if($_POST) //run only if there's a post data
     $mDate      = filter_var($_POST["date"], FILTER_SANITIZE_STRING);
     $mCity      = filter_var($_POST["city"], FILTER_SANITIZE_STRING);
 	$mAddress 	= filter_var($_POST["address"], FILTER_SANITIZE_STRING);
+	$mType		= filter_var($_POST["type"], FILTER_SANITIZE_STRING);
 	
-	$results = $mysqli->query("INSERT INTO markers (name, date, city, address, lat, lng) VALUES ('$mName', '$mDate', '$mCity', '$mAddress', $mLat, $mLng)");
+	$results = $mysqli->query("INSERT INTO markers (name, date, city, address, type, lat, lng) VALUES ('$mName', '$mDate', '$mCity', '$mAddress','$mType', $mLat, $mLng)");
 	if (!$results) {  
 		  header('HTTP/1.1 500 Error: Could not create marker!'); 
 		  exit();
@@ -84,6 +85,7 @@ while($obj = $results->fetch_object())
   $newnode->setAttribute("date",$obj->date);
   $newnode->setAttribute("city",$obj->city);
   $newnode->setAttribute("address", $obj->address);  
+  $newnode->setAttribute("type", $obj->type);
   $newnode->setAttribute("lat", $obj->lat);  
   $newnode->setAttribute("lng", $obj->lng);  	
 }
