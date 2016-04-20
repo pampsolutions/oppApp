@@ -46,16 +46,11 @@ echo '
       <div class="col s12 l4">
         <table class="bordered card">
         <h2>User Log</h2>
-        <thead><tr><th>IP Address</th><th>Logout Time</th><th>Delete</th></tr></thead><tbody>';
+        <thead><tr><th>IP Address</th><th>Logout Time</th></tr></thead><tbody>';
 
 foreach ($result as $row) {
 	echo '<tr><td>' . long2ip($row['ip']) . '</td>
-		<td>' . $row['time'] . '</td>
-        <td class="hide-on-small-only"><a class="waves-effect waves-light btn red" href="delete-ip.php?id=' . $row['id'] . '"
-			onclick="return confirm(\'Are you sure you want to delete this logout entry?\');">Delete</a></td>
-        <td class="hide-on-med-and-up"><a class="waves-effect waves-light btn-floating red" href="delete-ip.php?id=' . $row['id'] . '"
-			onclick="return confirm(\'Are you sure you want to delete this logout entry?\');"><i class="material-icons" id="del">delete</i></a></td>
-		</tr>';
+		<td>' . $row['time'] . '</td></tr>';
 }
 
 echo '</tbody></table></div></div>';
