@@ -17,7 +17,7 @@
   <header class="navbar-fixed">
     <nav>
         <div class="nav-wrapper black">
-            <a href="#!" class="brand-logo"><img class="responsive-img" id="logo" src="http://localhost:81/oppApp-master/img/logo.png" /></a>
+            <a href="#!" class="brand-logo"><img class="responsive-img" id="logo" src="/img/logo.png" /></a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="hide-on-med-and-down right">
                 <!--<li class="search">
