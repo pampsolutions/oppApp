@@ -1,5 +1,5 @@
 <footer class="page-footer black">
-        <div class="container">
+        <!--<div class="container">
             <div class="row">
                 <div class="col l6 s12">
                     <h5 class="white-text">Content</h5>
@@ -14,10 +14,10 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </div>-->
         <div class="footer-copyright">
             <div class="container">
-                2016 Copyright PAMP solution &copy;
+                 &copy; 2016 PAMP Solution
             </div>
         </div>
     </footer>
