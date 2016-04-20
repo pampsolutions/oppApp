@@ -12,6 +12,7 @@ html {background:#DDD;}
 .center {text-align: center; margin:0 auto;}
 #login .login-btn input, a, button.save-marker, button.remove-marker, .btn, nav ul a {transition: all 0.3s ease;}
 #login .btn input, #login input, .login-error, button.save-marker, button.remove-marker, table, thead {-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+select {display: inherit!important;}
 
 /* header */
 header a:hover {color:rgb(0,0,0)}
