@@ -70,7 +70,7 @@ if (isset($_GET['id'])) {
 <div>
     <label for="type">Type:</label>
     <select name="type" required value="<?php echo $type; ?>">
-        <option value="Green" <?print "<font color='green' Green" ?>>Green</option>
+        <option value="Green">Green</option>
         <option value="Orange">Orange</option>
         <option value="Red">Red</option>
     </select>
