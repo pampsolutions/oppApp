@@ -50,6 +50,7 @@ $(document).ready(function() {
         '<label for="pDate"><input class="save-date markerIn" name="pDate" type="date" value="201-01-13"/></label>'+
         '<label for="pCity"><input type="text" name="pCity" class="save-city markerIn" placeholder="Main Intersection" maxlength="40" /></label>'+
 				'<label for="pDesc"><textarea type="textarea" name="pDesc" class="save-desc markerIn" placeholder="More Details" maxlength="150"></textarea></label>'+
+				'<label for="pType"><span>severity of Location :</span><select name="pType" class="save-type"><option value="green">Green</option><option value="orange">Orange</option><option value="red">Red</option></select></label>'+
 				'</form>'+
 				'</div></p><button name="save-marker" class="save-marker">Save Marker</button>';
 
