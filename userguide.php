@@ -35,6 +35,16 @@ require_once('header.php');
           </div>
         </li>
         <li>
+          <div class="collapsible-header"><i class="material-icons">invert_colors</i>Severity of Location</div>
+          <div class="collapsible-body">
+            <p>To indicate the importance of the marked area, a selection of colors is required to be selected.</p>
+            <p><strong>Legend:</strong></p>
+            <p><span class="green"></span> High</p>
+            <p><span class="orange"></span> Medium</p>
+            <p><span class="red"></span> Low</p>
+          </div>
+        </li>
+        <li>
           <div class="collapsible-header"><i class="material-icons">perm_phone_msg</i>Questions or Concerns</div>
           <div class="collapsible-body"><p>Call PAMP Solutions or Email <a href="mailto:pampsolutions@gmail.com">pampsolutions@outlook.com</a></p></div>
         </li>
