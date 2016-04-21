@@ -68,11 +68,11 @@ if (isset($_GET['id'])) {
     <input name="address" required value="<?php echo $address; ?>" />
 </div>
 <div>
-    <label for="type">Type:</label>
+    <label for="type">Severity of Location:</label>
     <select name="type" required value="<?php echo $type; ?>">
-        <option class="green" value="Green">Green</option>
-        <option class="orange" value="Orange">Orange</option>
-        <option class="red" value="Red">Red</option>
+        <option value="Green">High</option>
+        <option value="Orange">Medium</option>
+        <option value="Red">Low</option>
     </select>
 </div>
 <input type="hidden" name="id" value="<?php echo $id; ?>" />
