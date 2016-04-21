@@ -72,6 +72,8 @@ footer.page-footer {margin-top:0!important; padding-top:0!important;}
 #userGuide .collapsible-body p {font-size: 16px; text-align: center; padding:10px 0!important;}
 #userGuide .collapsible-body span {border-radius:50%; padding:10px 20px; margin-right:10px;}
 #userGuide .collapsible-header i {display: inline!important; float: inherit!important; font-size: 35px!important; position: absolute; margin-left: -40px;}
+#userGuide .type-legend {margin: 0 auto; width: 150px;}
+#userGuide .type-legend li {padding: 15px 0; font-weight:700;}
 
 #editMarker form {text-align: center;}
 #editMarker .edit-card .btn {padding: 10px 40px; height:auto; font-size:20px;}
