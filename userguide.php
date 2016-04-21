@@ -39,9 +39,11 @@ require_once('header.php');
           <div class="collapsible-body">
             <p>To indicate the importance of the marked area, a selection of colors is required to be selected.</p>
             <p><strong>Legend:</strong></p>
-            <p><span class="green"></span> High</p>
-            <p><span class="orange"></span> Medium</p>
-            <p><span class="red"></span> Low</p>
+              <ul class="type-legend">
+                <li><span class="green"></span> High</li>
+                <li><span class="orange"></span> Medium</li>
+                <li><span class="red"></span> Low</li>
+              </ul>
           </div>
         </li>
         <li>
