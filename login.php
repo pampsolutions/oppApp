@@ -44,7 +44,7 @@
 				<input class="login-btn btn col s12" type="submit" value="Login" />
 			</div>
 			<div id="loginForgot" class="row">
-				<a onclick="Materialize.toast('Contact the developers for instructions.', 4000)">Forgot Your Password?</a> // <a href="#">Need Access?</a>
+				<a class="btn" onclick="Materialize.toast('Contact the developers for instructions.', 4000)">Forgot Your Password?</a>
 			</div>
 		</form>
 	</div>
