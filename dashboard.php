@@ -19,9 +19,9 @@ $sql = "SELECT * FROM markers ORDER BY id DESC LIMIT 10";
 
 $result = $conn->query($sql);
 
-$typeO = '<span class="orange relative" style="padding:5px 20px; border-radius:100px;">' . $types . '</span>';
-$typeG = '<span class="green relative" style="padding:5px 20px; border-radius:100px;">' . $types . '</span>';
-$typeR = '<span class="red relative" style="padding:5px 20px; border-radius:100px;">' . $types . '</span>';
+$typeO = '<span class="orange relative" style="padding:10px 20px; border-radius:50%;">' . $types . '</span>';
+$typeG = '<span class="green relative" style="padding:10px 20px; border-radius:50%;">' . $types . '</span>';
+$typeR = '<span class="red relative" style="padding:10px 20px; border-radius:50%;">' . $types . '</span>';
 
 echo '
       <div class="row container">
