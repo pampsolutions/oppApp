@@ -96,20 +96,20 @@ td a.btn-floating {width:29px; height:29px; line-height:29px}
 
 .marker-edit select {display:block; width:40%;}
 .markerIn::-webkit-input-placeholder {color:#989898;}
-.marker-edit label input, .marker-edit label select, .marker-edit label textarea {width: 100%; padding-left: 8px; border:0!important; border-radius: 3px; font-size:16px; background: #DDD; color: #000; font-weight: 700;}
-.marker-edit label textarea {width:100%!important; height: 5rem; color: #000; font-weight: 700; padding:10px;}
-.marker-edit label select {width:100%!important; margin:0!important;}
+.marker-edit label input, .marker-edit label select, .marker-edit label textarea {width: 90%; margin-left: -13px; padding-left: 8px; border: 2px solid #CCC!important; border-radius: 3px; font-size:16px; background: #DDD; color: #000; font-weight: 700;}
+.marker-edit label textarea {width:93%!important; height: 5rem; color: #000; font-weight: 700; padding:10px;}
+.marker-edit label select {width:93%!important; margin:0!important;}
 .gm-style .gm-style-iw {margin-left:15px;}
 .gm-style-iw div:first-of-type {overflow:hidden!important; width:250px!important;}
 h1.marker-heading {font-size: 25px; text-transform: uppercase; font-weight: 700; margin: 10px 0; text-align:center;}
-.marker-edit input[type=text]:focus:not([readonly]), .marker-edit input[type=date]:focus:not([readonly]), .marker-edit input[type=textarea]:focus:not([readonly]) {border-bottom: 0!important; box-shadow:none!important; background-color: #dfc138;}
+.marker-edit input[type=text]:focus:not([readonly]), .marker-edit input[type=date]:focus:not([readonly]), .marker-edit input[type=textarea]:focus:not([readonly]) {border-bottom: 0!important; box-shadow:none!important;}
 
 .saved-marker {text-align:center;}
 
 button.save-marker, button.remove-marker {cursor: pointer; border:0; padding: 10px; color: #FFF; font-weight: 700;}
 button.save-marker:hover, button.remove-marker:hover {background-color:#000;}
 button.remove-marker {background-color:#ff3c00; margin-right: 8px;}
-button.save-marker {float:left; background-color:#0089EC; margin:0 10px 0 15px;}
+button.save-marker {float:left; background-color:#0089EC; margin:0 10px 0 6px;}
 
 .marker-edit label{display:block;margin-bottom: 5px;}
 div.marker-info-win {margin-right: -20px;}
