@@ -109,7 +109,7 @@ h1.marker-heading {font-size: 25px; text-transform: uppercase; font-weight: 700;
 button.save-marker, button.remove-marker {cursor: pointer; border:0; padding: 10px; color: #FFF; font-weight: 700;}
 button.save-marker:hover, button.remove-marker:hover {background-color:#000;}
 button.remove-marker {background-color:#ff3c00; margin-right: 8px;}
-button.save-marker {float:left; background-color:#0089EC; margin:0 10px 0 5px;}
+button.save-marker {float:left; background-color:#0089EC; margin:0 10px 0 15px;}
 
 .marker-edit label{display:block;margin-bottom: 5px;}
 div.marker-info-win {margin-right: -20px;}
